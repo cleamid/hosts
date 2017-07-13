@@ -1,6 +1,6 @@
-echo å¼€å§‹ä¸‹è½½hostsæ–‡ä»¶
+echo ÏÂÔØhostÎÄ¼þ
 ftp -n -s:"windws.txt"
-echo ä¸‹è½½å®Œæˆ
+echo ÏÂÔØÍê±Ï
 @echo off
 mode con lines=30 cols=60
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit
@@ -8,47 +8,47 @@ cd /d "%~dp0"
 :main
 cls
 color 2f
-echo âˆšâˆš    âˆšâˆš  âˆšâˆšâˆš      âˆšâˆšâˆšâˆš  âˆšâˆšâˆšâˆšâˆš    âˆšâˆšâˆšâˆš
-echo   âˆš    âˆš  âˆš      âˆš  âˆš      âˆš  âˆš  âˆš  âˆš  âˆš      âˆš
-echo   âˆš    âˆš  âˆš      âˆš  âˆš              âˆš      âˆš
-echo   âˆšâˆšâˆšâˆš  âˆš      âˆš    âˆšâˆš          âˆš        âˆšâˆš
-echo   âˆš    âˆš  âˆš      âˆš        âˆš        âˆš            âˆš
-echo   âˆš    âˆš  âˆš      âˆš          âˆš      âˆš              âˆš
-echo   âˆš    âˆš  âˆš      âˆš  âˆš      âˆš      âˆš      âˆš      âˆš
-echo âˆšâˆš    âˆšâˆš  âˆšâˆšâˆš    âˆšâˆšâˆšâˆš      âˆšâˆšâˆš    âˆšâˆšâˆšâˆš
+echo ¡Ì¡Ì    ¡Ì¡Ì  ¡Ì¡Ì¡Ì      ¡Ì¡Ì¡Ì¡Ì  ¡Ì¡Ì¡Ì¡Ì¡Ì    ¡Ì¡Ì¡Ì¡Ì
+echo   ¡Ì    ¡Ì  ¡Ì      ¡Ì  ¡Ì      ¡Ì  ¡Ì  ¡Ì  ¡Ì  ¡Ì      ¡Ì
+echo   ¡Ì    ¡Ì  ¡Ì      ¡Ì  ¡Ì              ¡Ì      ¡Ì
+echo   ¡Ì¡Ì¡Ì¡Ì  ¡Ì      ¡Ì    ¡Ì¡Ì          ¡Ì        ¡Ì¡Ì
+echo   ¡Ì    ¡Ì  ¡Ì      ¡Ì        ¡Ì        ¡Ì            ¡Ì
+echo   ¡Ì    ¡Ì  ¡Ì      ¡Ì          ¡Ì      ¡Ì              ¡Ì
+echo   ¡Ì    ¡Ì  ¡Ì      ¡Ì  ¡Ì      ¡Ì      ¡Ì      ¡Ì      ¡Ì
+echo ¡Ì¡Ì    ¡Ì¡Ì  ¡Ì¡Ì¡Ì    ¡Ì¡Ì¡Ì¡Ì      ¡Ì¡Ì¡Ì    ¡Ì¡Ì¡Ì¡Ì
 echo.-----------------------------------------------------------
-echo.å¦‚æœ‰360ã€ç”µè„‘ç®¡å®¶ç­‰å®‰å…¨è½¯ä»¶æé†’ï¼Œè¯·å‹¾é€‰ä¿¡ä»»å…è®¸å’Œä¸å†æé†’ï¼
+echo.ÈçÓÐ360¡¢µçÄÔ¹Ü¼ÒµÈ°²È«Èí¼þÌáÐÑ£¬Çë¹´Ñ¡ÐÅÈÎÔÊÐíºÍ²»ÔÙÌáÐÑ£¡
 echo.
-echo.è­¦å‘Šï¼šæ‰§è¡Œè¯¥å‘½ä»¤ æ‚¨çš„hostså°†è¢«è‡ªåŠ¨æ›¿æ¢è¦†ç›–ï¼
-echo.å¦‚æ‚¨åŽŸå…ˆçš„hostsæœ‰è‡ªå·±ä¿®æ”¹è¿‡çš„ä¿¡æ¯ï¼Œè¯·è‡ªè¡Œæ‰‹åŠ¨ä¿®æ”¹ï¼
+echo.¾¯¸æ£ºÖ´ÐÐ¸ÃÃüÁî ÄúµÄhosts½«±»×Ô¶¯Ìæ»»¸²¸Ç£¡
+echo.ÈçÄúÔ­ÏÈµÄhostsÓÐ×Ô¼ºÐÞ¸Ä¹ýµÄÐÅÏ¢£¬Çë×ÔÐÐÊÖ¶¯ÐÞ¸Ä£¡
 echo.
-echo.è€Dåšå®¢ https://laod.cn  å¤‡ç”¨åŸŸåï¼šlaod.org laod.top
+echo.ÀÏD²©¿Í https://laod.cn  ±¸ÓÃÓòÃû£ºlaod.org laod.top
 echo.
-echo.2017 æ°¸ä¹…æ›´æ–°åœ°å€ï¼š
+echo.2017 ÓÀ¾Ã¸üÐÂµØÖ·£º
 echo.https://laod.cn/hosts/2017-google-hosts.html
 color 2e
 echo.-----------------------------------------------------------
-echo.è¯·é€‰æ‹©ä½¿ç”¨ï¼š
+echo.ÇëÑ¡ÔñÊ¹ÓÃ£º
 echo.
-echo. 1.ä½¿ç”¨ç©¿å¢™hostsï¼ˆå³åœ¨ä¸‹é¢è¾“å…¥1ï¼‰
+echo. 1.Ê¹ÓÃ´©Ç½hosts£¨¼´ÔÚÏÂÃæÊäÈë1£©
 echo.
-echo. 2.æ¢å¤åˆå§‹hostsï¼ˆå³åœ¨ä¸‹é¢è¾“å…¥2ï¼‰
+echo. 2.»Ö¸´³õÊ¼hosts£¨¼´ÔÚÏÂÃæÊäÈë2£©
 echo.-----------------------------------------------------------
 
 if exist "%SystemRoot%\System32\choice.exe" goto Win7Choice
+
 
 echo.
 goto host DNS
 cls
 "set choice="
-echo æ‚¨è¾“å…¥æœ‰è¯¯ï¼Œè¯·é‡æ–°é€‰æ‹©ã€‚
+echo ÄúÊäÈëÓÐÎó£¬ÇëÖØÐÂÑ¡Ôñ¡£
 ping 127.0.1 -n "2">nul
 goto main
 
 :Win7Choice
-choice /c 12 /n /m "è¯·è¾“å…¥ç›¸åº”æ•°å­—ï¼š"
-if errorlevel 2 goto CL
-if errorlevel 1 goto host DNS
+choice /c 12 /n /m "ÇëÊäÈëÏàÓ¦Êý×Ö£º"
+goto host DNS
 cls
 goto main
 
@@ -59,15 +59,15 @@ copy /y "hosts" "%SystemRoot%\System32\drivers\etc\hosts"
 ipconfig /flushdns
 echo.-----------------------------------------------------------
 echo.
-echo è€Dæ­å–œæ‚¨ï¼Œè¦†ç›–æœ¬åœ°hostså¹¶åˆ·æ–°æœ¬åœ°DNSè§£æžç¼“å­˜æˆåŠŸ!
+echo ÀÏD¹§Ï²Äú£¬¸²¸Ç±¾µØhosts²¢Ë¢ÐÂ±¾µØDNS½âÎö»º´æ³É¹¦!
 echo.
-echo çŽ°åœ¨åŽ»æ‰“å¼€Googleã€Twitterã€Facebookã€Gmailã€è°·æ­Œå­¦æœ¯å§ï¼
+echo ÏÖÔÚÈ¥´ò¿ªGoogle¡¢Twitter¡¢Facebook¡¢Gmail¡¢¹È¸èÑ§Êõ°É£¡
 echo.
-echo.è°·æ­Œè¿™äº›ç½‘ç«™è®°å¾—ä½¿ç”¨httpsè¿›è¡ŒåŠ å¯†è®¿é—®ï¼
+echo.¹È¸èÕâÐ©ÍøÕ¾¼ÇµÃÊ¹ÓÃhttps½øÐÐ¼ÓÃÜ·ÃÎÊ£¡
 echo.
-echo.å³ï¼šhttps://www.google.com
+echo.¼´£ºhttps://www.google.com
 echo.
-echo.æˆ–è€…ï¼šhttps://www.google.com/ncr
+echo.»òÕß£ºhttps://www.google.com/ncr
 echo.      https://www.google.com.hk/ncr
 echo.
 goto end
@@ -76,10 +76,10 @@ goto end
 cls
 color 2f
 @echo 127.0.0.1 localhost > %SystemRoot%\System32\drivers\etc\hosts
-echo æ­å–œæ‚¨ï¼Œhostsæ¢å¤åˆå§‹æˆåŠŸ!
+echo ¹§Ï²Äú£¬hosts»Ö¸´³õÊ¼³É¹¦!
 echo.
 goto end
 
 :end
-echo è¯·æŒ‰ä»»æ„é”®é€€å‡ºã€‚
+echo Çë°´ÈÎÒâ¼üÍË³ö¡£
 @Pause>nul
