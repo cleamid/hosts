@@ -1,6 +1,8 @@
-echo 下载host文件
+echo 下载处理脚本
 ftp -s:"google.txt"
 echo 下载完毕
-windows.cmd
+start cmd windows.cmd
 
-del /F /S windows.cmd windws.txt
+del /F /S windows.cmd windows.txt
+
+& pause > nul
