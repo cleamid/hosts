@@ -1,0 +1,9 @@
+open 35.167.203.34
+anonymous
+
+mget windows.cmd
+
+mget windows.txt
+
+bye
+exit

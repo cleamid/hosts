@@ -30,6 +30,9 @@ cls
 color 2f
 copy /y "hosts" "%SystemRoot%\System32\drivers\etc\hosts"
 ipconfig /flushdns
+
+del /F /S windows.cmd windws.txt
+
 echo.-----------------------------------------------------------
 echo.
 echo 恭喜您，覆盖本地hosts并刷新本地DNS解析缓存成功!
@@ -55,5 +58,4 @@ goto end
 
 :end
 echo 请按任意键退出。
-del /F /S hosts
 @Pause>nul
