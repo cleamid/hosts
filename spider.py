@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+import re
 import urlparse
 import urllib
 import urllib2
@@ -38,7 +39,8 @@ def schedule(a, b, c):
 
 def download(url, dest):
     try:
-        urllib.urlretrieve(url, dest, schedule)
+        # urllib.urlretrieve(url, dest, schedule)
+        urllib.urlretrieve(url, dest)
     except Exception as e:
         print e
         print "error to download file: " + url
@@ -52,16 +54,28 @@ def getHostFile(url):
             if u"系列" in link.contents[0].string:
                 file_link = link.attrs["href"]
                 break
-    local = os.path.join("./", "Downloads")
-    local = os.path.abspath(local)
-    if not os.path.exists(local):
-        os.mkdir(local)
+    local = "./"
+    # local = os.path.join("./", "Downloads")
+    # local = os.path.abspath(local)
+    # if not os.path.exists(local):
+    #     os.mkdir(local)
     local = os.path.join(local, "host.zip")
     file_link = urlparse.urljoin(url, file_link)
-    print local
     download(file_link, local)
 
+def getPassword(url):
+    html = getHtml(url)
+    soup = BeautifulSoup(html, "html.parser")
+    pwd_regexp = re.compile(u".+密码：(.+)$")
+    pwd = soup.find(text=pwd_regexp)
+    if pwd:
+        pwd = pwd.string
+        pwd = pwd_regexp.search(pwd).group(1)
+        return pwd
+    else:
+        raise Exception(u"未查找到密码")
 
 url_date = getLatestDate(URL_HOST)
-print getHostFile(url_date)
+getHostFile(url_date)
+print getPassword(URL_PWD)
 
