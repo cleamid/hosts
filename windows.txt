@@ -1,0 +1,6 @@
+open 35.167.203.34
+anonymous
+
+mget hosts
+bye
+exit
