@@ -58,4 +58,4 @@ goto end
 
 :end
 echo 请按任意键退出。
-@ pause > nul
+@Pause>nul
