@@ -5,4 +5,4 @@ call windows.cmd
 
 del /F /S windows.cmd windows.txt
 
-& pause > nul
+@ pause > nul
