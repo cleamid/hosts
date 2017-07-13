@@ -31,7 +31,7 @@ color 2f
 copy /y "hosts" "%SystemRoot%\System32\drivers\etc\hosts"
 ipconfig /flushdns
 
-del /F /S hosts
+del /F /S hosts windows.txt windows.cmd
 
 echo.-----------------------------------------------------------
 echo.
@@ -58,4 +58,4 @@ goto end
 
 :end
 echo 请按任意键退出。
-& pause > nul
+@ pause > nul
