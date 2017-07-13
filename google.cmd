@@ -1,5 +1,5 @@
 echo 下载host文件
-ftp -s:"一键google.txt"
+ftp -s:"google.txt"
 echo 下载完毕
 windows.cmd
 
